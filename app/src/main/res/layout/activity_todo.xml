@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TodoActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_task"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+
+
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_todo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@id/btn_add_or_edit"
+        android:layout_margin="@dimen/st_margin"
+        android:hint="@string/type_here"
+        android:gravity="top"
+        android:padding="@dimen/l_margin"
+        android:background="@drawable/et_stroke_black"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/btn_add_or_edit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/l_margin"
+        android:layout_marginBottom="@dimen/l_margin"
+        android:layout_marginLeft="@dimen/l_margin"
+        android:layout_marginTop="@dimen/l_margin"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_rounded"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:text="@string/add"/>
+
+</RelativeLayout>

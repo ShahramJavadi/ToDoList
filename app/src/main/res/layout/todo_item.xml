@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    android:layout_marginRight="@dimen/st_margin"
+    android:layout_marginLeft="@dimen/st_margin"
+    android:layout_marginTop="@dimen/sm_margin"
+    android:layout_marginBottom="@dimen/sm_margin"
+    app:cardElevation="2dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:tools="http://schemas.android.com/tools">
+
+
+        <TextView
+            android:id="@+id/txt_todo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:layout_marginRight="@dimen/st_margin"
+            android:layout_marginBottom="@dimen/st_margin"
+            android:layout_marginLeft="@dimen/st_margin"
+            tools:text="test"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:layout_marginTop="@dimen/st_margin"
+
+            />
+
+        <TextView
+            android:id="@+id/txt_dateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_todo"
+            android:layout_marginTop="@dimen/st_margin"
+            android:layout_marginLeft="@dimen/st_margin"
+            android:layout_marginBottom="@dimen/st_margin"
+            android:layout_marginRight="@dimen/st_margin"
+            />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
